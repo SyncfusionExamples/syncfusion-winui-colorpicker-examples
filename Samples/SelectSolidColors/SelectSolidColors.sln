@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30428.66
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectSolidColors", "SelectSolidColors.csproj", "{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Debug|x64.ActiveCfg = Debug|x64
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Debug|x64.Build.0 = Debug|x64
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Debug|x64.Deploy.0 = Debug|x64
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Debug|x86.ActiveCfg = Debug|x86
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Debug|x86.Build.0 = Debug|x86
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Debug|x86.Deploy.0 = Debug|x86
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Release|x64.ActiveCfg = Release|x64
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Release|x64.Build.0 = Release|x64
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Release|x64.Deploy.0 = Release|x64
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Release|x86.ActiveCfg = Release|x86
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Release|x86.Build.0 = Release|x86
+		{2D9E36C9-B92F-445C-8DE7-CD36E24D3D04}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8C20C3A-C50F-4042-B64C-2FE832A84C27}
+	EndGlobalSection
+EndGlobal

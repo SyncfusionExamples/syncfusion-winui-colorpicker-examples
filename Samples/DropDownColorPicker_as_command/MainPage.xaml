@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="DropDownColorPicker_as_command.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DropDownColorPicker_as_command"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top">
+        <RichEditBox Width="300" Name="richTextBox" Margin="20"/>
+
+        <syncfusion:SfDropDownColorPicker  VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           DropDownMode="Split"
+                                           Command="{x:Bind SelectionChangedCommand}"
+                                           Name="sfDropDownColorPicker" >
+
+            <!--Custom UI for DropDown colorpicker-->
+            <syncfusion:SfDropDownColorPicker.DropDownContentTemplate>
+                <DataTemplate>
+                    <syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush"
+                                              ColorEditorsVisibilityMode="Collapsed"                                              
+                                              Width="250" />
+                </DataTemplate>
+            </syncfusion:SfDropDownColorPicker.DropDownContentTemplate>
+
+            <!--Custom UI for DropDown button-->
+            <syncfusion:SfDropDownColorPicker.DropDownButtonTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <StackPanel Width="30">
+                            <Grid VerticalAlignment="Center"
+                          HorizontalAlignment="Center">
+                                <Path Fill="Black" 
+                              Data="M 0 0 L 5 5 L 10 0 Z"/>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfDropDownColorPicker.DropDownButtonTemplate>
+
+            <!--Custom UI for Selected color button-->
+            <syncfusion:SfDropDownColorPicker.ContentTemplate>
+                <DataTemplate>
+                    <StackPanel Height="30" 
+                        Orientation="Vertical">
+                        <Path Data="M22.078048,10.524087C22.078048,10.524087,31.99999,12.1271,31.99999,19.644161L31.99999,27.061223C31.99999,33.475275 25.987026,29.266241 25.987026,25.55721 25.987026,20.64617 30.397001,18.842155 28.392012,16.838139z M12.757101,0C17.367075,0,20.073059,6.5150537,20.174059,11.325093L20.174059,11.626096 20.374058,11.826097C22.178047,13.631112 24.483034,15.936131 25.28503,16.737138 26.588022,18.040148 25.686028,19.544161 25.18503,20.045165 24.583034,20.64617 14.160093,31.070255 14.160093,31.070255 12.9571,32.272265 8.9481231,30.067247 5.1401448,26.259216 1.3311667,22.450185 -0.8738203,18.341151 0.32917213,17.239142L11.354109,6.2140512C11.354109,6.2140512 12.055105,5.5120449 13.0581,5.5120449 13.559097,5.5120449 14.160093,5.713047 14.76109,6.3140526L15.964083,7.6170626C16.666079,9.8220806 16.165082,11.626096 15.864083,12.528103 15.263087,12.929107 14.862089,13.631112 14.862089,14.332118 14.862089,15.535128 15.864083,16.537136 17.067077,16.537136 18.26907,16.537136 19.272064,15.535128 19.272064,14.332118 19.272064,13.530111 18.871066,12.929107 18.26907,12.528103 18.37007,12.027099 18.37007,11.025091 18.16907,9.7220802 18.16907,9.7220802 18.37007,9.9220819 18.770067,10.323085L18.770067,10.123083C18.26907,6.0130501 15.964083,1.3030109 12.657102,1.3030109 8.6481248,1.3030109 7.7461299,5.4120445 7.74613,6.9150572L6.5431371,6.9150572C6.5431368,4.2090359,8.2471271,0,12.757101,0z" 
+                      Stretch="Uniform"                          
+                      Fill="Black" 
+                      Width="20" Height="18" 
+                      RenderTransformOrigin="0.5,0.5"/>
+                        <Border Margin="5" 
+                        Background="{Binding}"
+                        Grid.Row="1"
+                        Width="25"
+                        Height="8">
+                        </Border>
+                    </StackPanel>
+                </DataTemplate>
+            </syncfusion:SfDropDownColorPicker.ContentTemplate>
+        </syncfusion:SfDropDownColorPicker>
+    </StackPanel>
+</Page>
